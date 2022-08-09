@@ -17,4 +17,8 @@ export class AppComponent {
       youtubeLink: 'https://www.youtube.com',
     },
   };
+  dataClicked(event: Event) {
+    const target = event.target as HTMLElement;
+    console.log('year clicked', target.innerText);
+  }
 }
