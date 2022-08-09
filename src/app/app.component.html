@@ -3,6 +3,7 @@
 <ul>
   <li>{{ favFlop.title }}</li>
   <li>{{ favFlop.rating }}</li>
-  <li>{{ favFlop.imdbLink }}</li>
   <li>{{ favFlop.yearReleased }}</li>
+  <li><a [href]="favFlop.imdbLink">IMDB Link</a></li>
+  <li><a [href]="favFlop.soundTrack.youtubeLink">YT Link</a></li>
 </ul>
