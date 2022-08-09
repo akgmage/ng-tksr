@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   selectedIndex: number = -1;
-  voteFor(index: number) {
+  onVoteClick(index: number) {
     if (this.isSelected(index)) {
       this.selectedIndex = -1;
     } else {
