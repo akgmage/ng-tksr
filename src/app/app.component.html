@@ -1,9 +1,19 @@
-<h1>{{ title }}</h1>
-<button [disabled]="!bestMovieEver">Best movie ever</button>
-<ul>
-  <li>{{ favFlop.title }}</li>
-  <li (click)="dataClicked($event)">{{ favFlop.rating }}</li>
-  <li (click)="dataClicked($event)">{{ favFlop.yearReleased }}</li>
-  <li><a [href]="favFlop.imdbLink">IMDB Link</a></li>
-  <li><a [href]="favFlop.soundTrack.youtubeLink">YT Link</a></li>
-</ul>
+<h1>Flop voter</h1>
+<div class="row">
+  <div class="item">
+    <img src="assets/eyeing-you.jpg" alt="" />
+    <button>Vote</button>
+  </div>
+  <div class="item">
+    <img src="assets/fork-it-up.jpg" alt="" />
+    <button>Vote</button>
+  </div>
+  <div class="item">
+    <img src="assets/fork-it-up.jpg" alt="" />
+    <button>Vote</button>
+  </div>
+  <div class="item">
+    <img src="assets/fork-it-up.jpg" alt="" />
+    <button>Vote</button>
+  </div>
+</div>

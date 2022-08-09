@@ -1,0 +1,17 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row .item {
+  margin: 10px;
+}
+
+.row .item img {
+  height: 200px;
+  width: 200px;
+}
+
+button {
+  display: block;
+}
