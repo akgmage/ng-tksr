@@ -13,5 +13,8 @@ export class AppComponent {
     yearReleased: 1999,
     rating: 'PG-13',
     imdbLink: 'https://www.google.com',
+    soundTrack: {
+      youtubeLink: 'https://www.youtube.com',
+    },
   };
 }
