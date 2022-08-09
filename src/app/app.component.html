@@ -1,19 +1,32 @@
 <h1>Flop voter</h1>
+{{ selectedIndex }}
 <div class="row">
   <div class="item">
+    <h3 [hidden]="!isSelected(0)">Chosen!</h3>
     <img src="assets/eyeing-you.jpg" alt="" />
-    <button>Vote</button>
+    <button [disabled]="anySelected() && !isSelected(0)" (click)="voteFor(0)">
+      {{ getButtonText(0) }}
+    </button>
   </div>
   <div class="item">
+    <h3 [hidden]="!isSelected(1)">Chosen!</h3>
     <img src="assets/fork-it-up.jpg" alt="" />
-    <button>Vote</button>
+    <button [disabled]="anySelected() && !isSelected(1)" (click)="voteFor(1)">
+      {{ getButtonText(1) }}
+    </button>
   </div>
   <div class="item">
+    <h3 [hidden]="!isSelected(2)">Chosen!</h3>
     <img src="assets/fork-it-up.jpg" alt="" />
-    <button>Vote</button>
+    <button [disabled]="anySelected() && !isSelected(2)" (click)="voteFor(2)">
+      {{ getButtonText(2) }}
+    </button>
   </div>
   <div class="item">
+    <h3 [hidden]="!isSelected(3)">Chosen!</h3>
     <img src="assets/fork-it-up.jpg" alt="" />
-    <button>Vote</button>
+    <button [disabled]="anySelected() && !isSelected(3)" (click)="voteFor(3)">
+      {{ getButtonText(3) }}
+    </button>
   </div>
 </div>
