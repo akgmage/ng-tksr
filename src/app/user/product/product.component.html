@@ -1,6 +1,10 @@
 <form>
   <label for="pname">Product name:</label><br />
-  <input type="text" id="pname" name="fname" /><br />
+  <input type="text" [(ngModel)]="pname" /><br />
   <label for="desc">Description</label><br />
-  <input type="text" id="desc" name="desc" />
+  <input type="text" [(ngModel)]="desc" />
 </form>
+<div>
+  {{ pname }}
+  {{ desc }}
+</div>
